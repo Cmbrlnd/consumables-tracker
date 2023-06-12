@@ -1,0 +1,186 @@
+.add {
+  background-color: #e7eaee;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: "IBM Plex Sans Devanagari", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 100;
+
+  height: 100vh;
+  width: 100vw;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  height: 70%;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 16%;
+}
+
+.input {
+  margin-left: auto;
+  height: 50%;
+  width: 40%;
+  font-size: 1.5rem;
+  background: #bfd0fd;
+  border: none;
+}
+
+.input:focus {
+  border: 2px solid #0f50f7 !important;
+  border-radius: 5px;
+  outline: none !important;
+}
+
+.p {
+  margin-right: 20%;
+  height: 100%;
+  line-height: 70px;
+}
+
+.submitBtn {
+  width: 40%;
+  margin-top: 1rem;
+
+  background: #0f50f7;
+  box-shadow: 6px 6px 0px #bfd0fd;
+  border-radius: 10px;
+  border: none;
+
+  font-family: "IBM Plex Sans Devanagari";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.5rem;
+
+  color: #ffffff;
+}
+
+.deleteBtn {
+  width: 40%;
+  margin-top: 1rem;
+
+  background: #ff0000;
+  border-radius: 10px;
+  border: none;
+
+  font-family: "IBM Plex Sans Devanagari";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.5rem;
+
+  color: #ffffff;
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+}
+
+.modalBtn {
+  width: 280px;
+  height: 77px;
+  background: #0f50f7;
+  border-radius: 10px;
+  box-shadow: 6px 6px 0px #bfd0fd;
+  border: none;
+  font-family: "IBM Plex Sans Devanagari";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 55px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.modalBtnDel {
+  width: 280px;
+  height: 77px;
+  background: red;
+  border-radius: 10px;
+  box-shadow: 6px 6px 0px #bfd0fd;
+  border: none;
+  font-family: "IBM Plex Sans Devanagari";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 55px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.modalDiv {
+  height: 50%;
+  width: 80%;
+  font-family: "IBM Plex Sans Devanagari";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+button:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.btnContainer {
+  gap: 1rem;
+}
+
+@media (max-width: 900px) {
+  .add {
+    font-size: 1.2rem;
+  }
+
+  .input {
+    margin-left: auto;
+    height: 50%;
+    width: 40%;
+    font-size: 1.2rem;
+    background: #bfd0fd;
+    border: none;
+  }
+
+  .submitBtn {
+    font-size: 1.8rem;
+  }
+
+  .p {
+    margin-right: 10%;
+  }
+}
+
+@media (max-width: 700px) {
+  .modalBtn {
+    width: 40%;
+    height: 100%;
+    font-size: 1.2rem;
+  }
+
+  .modalBtnDel {
+    width: 60%;
+    height: 100%;
+    font-size: 1.2rem;
+    line-height: unset;
+  }
+  .btnContainer {
+    gap: 1rem;
+  }
+}

@@ -1,0 +1,13 @@
+.search {
+    background-color: #e7eaee;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: "IBM Plex Sans Devanagari", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 100;
+  
+    height: 100vh;
+    width: 100vw;
+  }

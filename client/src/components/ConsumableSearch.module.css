@@ -1,0 +1,111 @@
+.modelSearchContainer {
+  height: 100%;
+  max-height: 80vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.searchHeader {
+  font-weight: 500;
+}
+
+.searchInput {
+  height: 8%;
+  width: 60%;
+  font-size: 1.5rem;
+  background: #bfd0fd;
+  border: none;
+}
+
+.searchInput:focus {
+  border: 2px solid #0f50f7 !important;
+  border-radius: 5px;
+  outline: none !important;
+}
+
+.resultContainer {
+  display: flex;
+  justify-content: center;
+  width: 76%;
+  height: 70%;
+  overflow-y: auto;
+
+  height: 60%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+ul {
+  list-style: none;
+  margin: unset;
+}
+
+li {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 37px;
+  margin: 1rem;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+@media (max-width: 1400px) {
+  .searchHeader {
+    font-size: 1.6rem;
+  }
+
+  ul {
+    list-style: none;
+    margin: unset;
+  }
+
+  li {
+    font-weight: 300;
+    font-size: 1.1rem;
+    line-height: 37px;
+    margin: 1rem;
+  }
+
+}
+
+@media (max-width: 450px) {
+  .searchHeader {
+    font-size: 1.4rem;
+  }
+
+  ul {
+    list-style: none;
+    margin: unset;
+  }
+
+  li {
+    font-weight: 300;
+    font-size: 1.1rem;
+    line-height: 30px;
+  }
+}

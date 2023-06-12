@@ -1,0 +1,70 @@
+.topRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.homeBtn {
+  background: #0f50f7;
+  border-radius: 10px;
+  border: none;
+  padding: 0.75rem;
+  width: 10%;
+  min-width: 160px;
+
+  font-family: "IBM Plex Sans Devanagari";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  box-shadow: 6px 6px 0px #bfd0fd;
+  border-radius: 10px;
+  border: none;
+
+  color: #ffffff;
+  cursor: pointer;
+  text-align: center;
+}
+
+a.homeBtn {
+  height: 40%;
+}
+
+.homeBtn:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+  .header {
+    font-size: 2rem;
+  }
+
+  .topRow {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 650px) {
+
+  .homeBtn {
+    font-size: 1.5rem;
+    padding: 0.4rem;
+    width: 10%;
+    min-width: 120px;
+  }
+}
+
+@media (max-width: 500px) {
+  .header {
+    font-size: 1.5rem;
+  }
+
+  .homeBtn {
+    padding: 0.2rem;
+    width: 10%;
+    min-width: 100px;
+    font-size: 1.2rem;
+  }
+}

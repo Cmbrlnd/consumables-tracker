@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Devanagari');
+
+.home {
+    background-color: #e7eaee;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'IBM Plex Sans Devanagari', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 100;
+
+    height: 100vh;
+    width: 100vw;
+}
+
+.topRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60vh;
+    width: 100vw;
+}
+
+.bottomRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    height: 40vh;
+    width: 100vw;
+}
+
+a {
+    all: unset;
+    cursor: pointer;
+    width: 25%;
+    height: 80%;
+}
+
+.stockReport {
+    height: 50%;
+    width: 40%;
+}
+
+@media (max-width: 768px) {
+    .header {
+        font-size: 1em;
+        padding: 1em;
+    }
+
+    .topRow {
+        height: 40vh;
+    }
+}
+
+@media (max-width: 677px) {
+    .topRow {
+        flex-direction: column;
+        height: 75vh;
+        gap: 2rem;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
+
+    .bottomRow {
+        height: 25vh;
+        width: 100vw;
+    }
+
+    a {
+        width: 80%;
+    }
+
+    .stockReport {
+        height: 80%;
+        width: 80%;
+    }
+}

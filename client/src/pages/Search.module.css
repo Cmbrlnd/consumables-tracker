@@ -1,0 +1,59 @@
+.search {
+  background-color: #e7eaee;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: "IBM Plex Sans Devanagari", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 100;
+
+  height: 100vh;
+  width: 100vw;
+}
+
+.searchContainers {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+
+  /* height: 70vh; */
+  width: 100vw;
+  height: 100%;
+}
+
+@media (max-width: 950px) {
+  .search {
+    background-color: #e7eaee;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: "IBM Plex Sans Devanagari", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 100;
+    height: 100%;
+
+    /* height: 210vh; */
+    width: 100vw;
+  }
+
+  .searchContainers {
+    flex-direction: column;
+    gap: 2rem;
+    /* height: 200vh; */
+    align-items: center;
+  }
+
+  .card {
+    min-width: 375px;
+  }
+
+}
+
+@media (max-width: 450px) {
+  .searchCard {
+    height: 50%;
+  }
+}
